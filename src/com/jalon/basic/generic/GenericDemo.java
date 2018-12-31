@@ -120,7 +120,7 @@ public class GenericDemo {
         Integer i2 = (Integer) list.get(0);
         System.out.println(list2);
 
-//
+//2
     }
 }
 class Generic2<T>{
