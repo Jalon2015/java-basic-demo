@@ -47,19 +47,27 @@ public class MapDemo {
 //        }
 //
 
+        Map<A, Integer> map3 = new TreeMap<>();
+        map3.put(new A(), 1);
+        map3.put(new A(), 2);
+        map3.put(new A(), 3);
+        System.out.println(map3);
 
         // LinkedHashMap
-        Map<String, Integer> map2 = new LinkedHashMap<>();
-        // 倒序插入100个数
-        int j =100;
-        while (j-->0){
-            map2.put(j+"", j);
-        }
-        for (String str :
-                map2.keySet()) {
-            // 这里按照插入的顺序依次输出
-            System.out.println(str);
-        }
+//        Map<String, Integer> map2 = new LinkedHashMap<>();
+//        // 倒序插入100个数
+//        int j =100;
+//        while (j-->0){
+//            map2.put(j+"", j);
+//        }
+//        for (String str :
+//                map2.keySet()) {
+//            // 这里按照插入的顺序依次输出
+//            System.out.println(str);
+//        }
 
     }
+}
+class A{
+
 }
