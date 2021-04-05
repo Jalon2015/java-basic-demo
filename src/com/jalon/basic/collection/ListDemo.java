@@ -13,7 +13,13 @@ import java.util.*;
  * @date: 2021/3/30 15:16
  */
 public class ListDemo {
+    public static void addAll(){
+        List<String> list = new ArrayList<>();
+        list.addAll(Collections.nCopies(10, "hello"));
+        System.out.println(list);
+    }
     public static void main(String[] args) {
+        addAll();
         // 初始化
         List<String> list = new ArrayList<>();
         // 插入数据
@@ -30,7 +36,6 @@ public class ListDemo {
         String res = list.toString();
 
         System.out.println(res);
-
 
     }
 }
