@@ -66,15 +66,28 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
-  <component name="RunManager" selected="Application.MapDemo">
+  <component name="RunManager" selected="Application.FatherDemo">
     <configuration name="ArrayDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jalon.basic.array.ArrayDemo" />
       <module name="JavaBasicDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jalon.basic.array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FatherDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jalon.basic.extend.FatherDemo" />
+      <module name="JavaBasicDemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jalon.basic.extend.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,26 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextIoDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.TextIoDemo" />
-      <module name="primitive" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FatherDemo" />
         <item itemvalue="Application.MapDemo" />
         <item itemvalue="Application.ListDemo" />
         <item itemvalue="Application.ArrayDemo" />
         <item itemvalue="Application.FileIoDemo" />
-        <item itemvalue="Application.TextIoDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -164,6 +164,10 @@
       <workItem from="1617116608588" duration="1323000" />
       <workItem from="1617118013799" duration="1802000" />
       <workItem from="1617195681082" duration="6188000" />
+      <workItem from="1617369326739" duration="2333000" />
+      <workItem from="1617437318913" duration="7221000" />
+      <workItem from="1617536568871" duration="5148000" />
+      <workItem from="1617592713153" duration="10894000" />
     </task>
     <servers />
   </component>
@@ -211,10 +215,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1616822963036" />
-    <state x="730" y="217" key="#com.intellij.ide.util.MemberChooser" timestamp="1616917096985">
+    <state x="730" y="217" key="#com.intellij.ide.util.MemberChooser" timestamp="1617604609936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="217" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1616917096985" />
+    <state x="730" y="217" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1617604609936" />
     <state x="550" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1616859659938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -223,22 +227,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="705" y="288" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617117922190" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1617205465256">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1617452087623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617205465256" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1617205465256">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1617452087623" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1617452087622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617205465256" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1617205465256">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1617452087622" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1617452087622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617205465256" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1617205465256">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1617452087622" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1617452087623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617205465256" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617452087623" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1617199429322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -255,22 +259,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1617199429322" />
-    <state x="426" y="178" key="SettingsEditor" timestamp="1617118056024">
+    <state x="540" y="182" width="998" height="708" key="SettingsEditor" timestamp="1617619153454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="426" y="178" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617118056024" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1617197344325">
+    <state x="540" y="182" width="998" height="708" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1617619153454" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1617632913433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1617197344325" />
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1617632913433" />
     <state x="299" y="194" key="new project wizard" timestamp="1616822837649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="299" y="194" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1616822837649" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617205515023">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1617633099032">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617205515023" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1617633099032" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
