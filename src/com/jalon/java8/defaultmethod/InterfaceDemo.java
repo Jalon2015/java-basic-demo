@@ -9,6 +9,7 @@ package com.jalon.java8.defaultmethod;
  * @time: 2021/4/13
  */
 public interface InterfaceDemo {
+    int a = 0;
     void oldFun();
     default void newFun(){
         System.out.println("newFun");
