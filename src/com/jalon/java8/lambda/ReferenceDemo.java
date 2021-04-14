@@ -1,4 +1,4 @@
-package com.jalon.java8;
+package com.jalon.java8.lambda;
 
 /**
  * <p>

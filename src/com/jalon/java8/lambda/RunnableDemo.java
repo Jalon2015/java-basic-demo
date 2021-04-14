@@ -25,5 +25,6 @@ public class RunnableDemo {
         Thread t1 = new Thread(runnable1);
         t.start();
         t1.start();
+        new Thread(() -> System.out.println("run")).start();
     }
 }

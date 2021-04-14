@@ -15,23 +15,9 @@ import java.util.function.Predicate;
  */
 public class FileReaderDemo {
     public static void main(String[] args) throws IOException {
-        Consumer<String> consumer = s-> System.out.println(s);
-        Predicate<String> predicate = s -> false;
-        Comparator<String> comparator = Comparator.comparingInt(String::length);
-        FileReadInterface fileReadInterface = new FileReadInterface() {
-            @Override
-            public String process(BufferedReader reader) throws IOException {
-                return null;
-            }
-        };
-        FileReadInterface fileReadInterface2 = new FileReadInterface() {
-            @Override
-            public String process(BufferedReader reader) throws IOException {
-                return null;
-            }
-        };
+        FileReadInterface fileReadInterface = reader -> reader.readLine();
+        FileReadInterface fileReadInterface2 = reader -> reader.readLine() + reader.readLine();
 
-        System.out.println(fileReadInterface.equals(fileReadInterface2));
         System.out.println(processFile());
         System.out.println(processFile(BufferedReader::readLine));
     }
@@ -54,7 +40,5 @@ public class FileReaderDemo {
 @FunctionalInterface
 interface FileReadInterface{
     String process(BufferedReader reader) throws IOException;
-
-    int hashCode();
 }
 
