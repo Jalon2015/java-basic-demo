@@ -10,5 +10,5 @@ package com.jalon.java8.lambda;
  */
 @FunctionalInterface
 public interface NoFunctionInterfaceDemo extends FunctionInterfaceDemo{
-    void abstractFun2();
+    void abstractFun();
 }

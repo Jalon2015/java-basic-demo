@@ -22,17 +22,15 @@ public class FileReaderDemo {
         System.out.println(processFile(BufferedReader::readLine));
     }
     public static String processFile(FileReadInterface fileReadInterface) throws IOException {
-        try(
-                BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\CompanyProject\\JavaProject\\JavaBasicDemo\\README.md"))
-        ){
+        try( BufferedReader bufferedReader =
+                 new BufferedReader(new FileReader("D:\\CompanyProject\\JavaProject\\JavaBasicDemo\\test.txt"))){
             return fileReadInterface.process(bufferedReader);
         }
     }
     public static String processFile() throws IOException {
         // Java7新增的语法，try(){}，可自动关闭资源，减少了代码的臃肿
-        try(
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("D:\\CompanyProject\\JavaProject\\JavaBasicDemo\\README.md"))
-        ){
+        try( BufferedReader bufferedReader =
+                new BufferedReader(new  FileReader("D:\\JavaProject\\JavaBasicDemo\\test.txt"))){
             return bufferedReader.readLine();
         }
     }
