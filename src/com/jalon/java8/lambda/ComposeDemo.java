@@ -14,24 +14,18 @@ import java.util.List;
  */
 public class ComposeDemo {
     public static void main(String[] args) {
-        Comparator<String> comparatorTest = (a, b)->a.length()-b.length();
+        List<Dog> list = Arrays.asList(new Dog(1,2), new Dog(1, 1));
         // 先按年龄排序（默认递增）
-        Comparator<Animal> comparator = Comparator.comparingInt(Animal::hashCode);
         Comparator<Dog> comparableAge = Comparator.comparingInt(Dog::getAge);
-        // 如果有相同的年龄，则再按体重排序（如果年龄已经比较出大小，则下面的体重就不会再去比较）
+        // 如果有相同的年龄，则年龄相同的再按体重排序（如果年龄已经比较出大小，则下面的体重就不会再去比较）
         Comparator<Dog> comparableWeight = Comparator.comparingInt(Dog::getWeight);
-        List<Dog> list = Arrays.asList(new Dog(1,2), new Dog(1, 1), new Dog(2,1));
+        // 调用list对象的sort方法排序，参数是Comparator<? super Dog>
+        list.sort(comparableAge.thenComparing(comparableWeight));
         System.out.println(list);
-        list.sort(comparator);
-//        list.sort(comparableAge.thenComparing(comparableWeight));
-        System.out.println(list);
-
     }
 }
-class Animal{
 
-}
-class Dog extends Animal{
+class Dog{
     private int age;
     private int weight;
 
