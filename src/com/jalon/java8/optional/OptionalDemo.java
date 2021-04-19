@@ -11,24 +11,81 @@ import java.util.Optional;
  * @time: 2021/4/18
  */
 public class OptionalDemo {
-    // 1. 包装现有库的null返回值，比如Map
-    public static void nullFun(){
-        Optional<Cat> optional = Optional.of(new Cat(1));
-        optional.isPresent(c-> System.out.println(c));
+    private static final String DEFAULT_NAME = "javalover";
+
+    public static void main(String[] args) {
+//        getName(null);
+        getName2(null);
+    }
+    // 取出c.name
+    public static void getName(C c){
+        // 旧代码
+        String name = (c!=null ? c.getName() : DEFAULT_NAME);
+        System.out.println("old: "+name);
+        // 新代码
+        String nameNew = Optional
+                            .ofNullable(c)
+                            .map(c1->c1.getName())
+                            .orElse(DEFAULT_NAME);
+
+        System.out.println("new: "+nameNew);
+    }
+
+    // 取出 b.c.name
+    public static void getName2(B b){
+        // 旧代码
+        String name = b!=null ? ( b.getC()!=null ? b.getC().getName() : DEFAULT_NAME) : DEFAULT_NAME;
+        // 新代码
+        String nameNew = Optional
+                .ofNullable(b)
+                .map(b1->b1.getC())
+                .map(c1->c1.getName())
+                .orElse(DEFAULT_NAME);
+        System.out.println(nameNew);
     }
 }
-class Cat{
-    int age;
+class A{
+    private B b;
 
-    public Cat(int age) {
-        this.age = age;
+    public A(B b) {
+        this.b = b;
     }
 
-    public int getAge() {
-        return age;
+    public B getB() {
+        return b;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setB(B b) {
+        this.b = b;
+    }
+}
+class B{
+    private C c;
+
+    public B(C c) {
+        this.c = c;
+    }
+
+    public C getC() {
+        return c;
+    }
+
+    public void setC(C c) {
+        this.c = c;
+    }
+}
+class C{
+    private String name;
+
+    public C(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
