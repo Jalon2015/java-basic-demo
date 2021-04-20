@@ -1,6 +1,7 @@
 package com.jalon.java8.optional;
 
 import java.util.Optional;
+import java.util.stream.Stream;
 
 /**
  * <p>
@@ -16,6 +17,7 @@ public class OptionalDemo {
     public static void main(String[] args) {
 //        getName(null);
         getName2(null);
+
     }
     // 取出c.name
     public static void getName(C c){
