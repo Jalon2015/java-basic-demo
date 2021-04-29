@@ -1,4 +1,4 @@
-package com.jalon.concurrent;
+package com.jalon.concurrent.chapter2;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -31,11 +31,10 @@ public class UnSafeDemo2 {
                 }
             }
         }).start();
-        Object o = new Object();
         new Thread(()-> {
             for(int j=0;j<10000;j++){
                 // 这里加了锁
-                synchronized (o){
+                synchronized (unSafeDemo2){
                     a.incrementAndGet();
                     b.incrementAndGet();
                     if(a.get()!=b.get()){

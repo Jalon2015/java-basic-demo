@@ -1,4 +1,4 @@
-package com.jalon.concurrent;
+package com.jalon.concurrent.chapter2;
 
 /**
  * <p>
