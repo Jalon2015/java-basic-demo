@@ -2,6 +2,7 @@ package com.jalon.concurrent.chapter6;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * <p>
@@ -21,6 +22,7 @@ public class ExecutorDemo {
         Executor singleThreadExecutor = Executors.newSingleThreadExecutor();
         // 基于调度机制的线程池（不同于上面的线程池，这个池创建的任务不会立马执行，而是定期或者延时执行）
         Executor scheduledThreadPool = Executors.newScheduledThreadPool(5);
+        // 单独使用 ThreadPoolFactory
 
     }
 }
