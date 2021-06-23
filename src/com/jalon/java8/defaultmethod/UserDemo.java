@@ -16,11 +16,11 @@ public class UserDemo implements InterfaceDemo{
 
     public static void main(String[] args) {
         UserDemo demo = new UserDemo();
-        /**you
+        /**
          *  InterfaceDemo升级后，新增了newFun方法
          *  但是由于newFun是默认方法，有提供实现内容
          *  所以这里的子类 UserDemo就可以直接使用
-          */
+         */
         demo.newFun();
     }
 }

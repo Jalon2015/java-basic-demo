@@ -18,7 +18,7 @@ public class AtomicDemo {
     public static void main(String[] args) {
         AtomicInteger atomicInteger = new AtomicInteger(1);
         ExecutorService service = Executors.newFixedThreadPool(10);
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 100; i++) {
             service.submit(() -> {
                 // 这里会先检查AtomicInteger中的值是否被修改，如果没被修改，才会更新，否则会自旋等待
                 atomicInteger.getAndIncrement();
@@ -26,7 +26,7 @@ public class AtomicDemo {
             });
         }
         try {
-            TimeUnit.SECONDS.sleep(3);
+            TimeUnit.SECONDS.sleep(1);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
