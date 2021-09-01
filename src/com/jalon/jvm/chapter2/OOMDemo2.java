@@ -1,4 +1,4 @@
-package com.jalon.jvm.chapter1;
+package com.jalon.jvm.chapter2;
 
 /**
  * <p>
