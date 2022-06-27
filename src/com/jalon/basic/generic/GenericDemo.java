@@ -13,7 +13,6 @@ import java.util.List;
  **/
 public class GenericDemo {
     public static void main(String[] args) {
-        List<Dog> list2 = new ArrayList<>();
 
     }
 }
@@ -22,8 +21,4 @@ class Animal{
 
     }
 }
-class Dog extends Animal{
-    public <T> void fun(T t){
-        t.compareTo();
-    }
-}
+
